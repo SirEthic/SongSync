@@ -1,0 +1,1 @@
+import 'package:dart_des/dart_des.dart'; import 'dart:convert'; void main() { String encUrl = 'ID2ieOjCrwfgWvL5sXl4B1ImC5QfbsDy3oAkJDMbq8VkXOZU65DcFdrDhsTWIRT7u/8vMld9DHecVMFCBmD5/Rw7tS9a8Gtq'; DES des = DES(key: utf8.encode('38346591')); List<int> decodedBase64 = base64.decode(encUrl); List<int> decrypted = des.decrypt(decodedBase64); print(utf8.decode(decrypted).trim()); }

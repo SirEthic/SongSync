@@ -1,0 +1,1 @@
+import 'dart:convert'; import 'package:dio/dio.dart'; void main() async { var res = await Dio().get('https://www.jiosaavn.com/api.php?__call=search.getResults&q=Pineapple%20Express%20Fineapple&p=1&n=20&_format=json&_marker=0'); var data = res.data is String ? jsonDecode(res.data) : res.data; print(data['results']); }

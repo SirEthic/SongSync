@@ -1,0 +1,1 @@
+import 'package:dio/dio.dart'; void main() async { try { var res = await Dio().get('https://www.jiosaavn.com/api.php?__call=song.getDetails&pids=BeXBcbVK&_format=json&_marker=0&ctx=web6dot0'); print(res.data); } catch (e) { print(e); } }

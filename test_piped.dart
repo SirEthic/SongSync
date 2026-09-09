@@ -1,0 +1,1 @@
+import 'dart:convert'; import 'package:dio/dio.dart'; void main() async { var res = await Dio().get('https://invidious.fdn.fr/api/v1/videos/IhP3J0j9JmY'); print(res.data['formatStreams'][0]['url']); }
