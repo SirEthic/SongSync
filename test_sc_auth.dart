@@ -1,1 +1,0 @@
-import 'package:dio/dio.dart'; void main() async { try { var res = await Dio().get('https://api-v2.soundcloud.com/search/tracks?q=test&client_id=Pb72ranhoyt6gw7hM7TkzUItXlMWSNSo&limit=1'); print(res.statusCode); } catch (e) { print(e); } }

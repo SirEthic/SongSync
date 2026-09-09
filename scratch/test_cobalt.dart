@@ -1,1 +1,0 @@
-import 'package:dio/dio.dart'; void main() async { try { var res = await Dio().post('https://co.wuk.sh/api/json', data: {'url': 'https://www.youtube.com/watch?v=ol6mmFtZbJY', 'isAudioOnly': true}, options: Options(headers: {'Accept': 'application/json', 'Content-Type': 'application/json'})); print(res.data['url']); } catch (e) { print(e); } }

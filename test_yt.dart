@@ -1,1 +1,0 @@
-import 'package:dio/dio.dart'; void main() async { try { await Dio().head('https://img.youtube.com/vi/IhP3J0j9JmY/maxresdefault.jpg'); print('Max res exists!'); } catch (e) { print('Max res failed'); } }

@@ -1,1 +1,0 @@
-import 'package:dio/dio.dart'; import 'dart:convert'; void main() async { try { var dio = Dio(); var res = await dio.get('https://www.jiosaavn.com/api.php?__call=autocomplete.get&query=believer&_format=json&_marker=0&ctx=web6dot0'); print(res.data); } catch (e) { print(e); } }

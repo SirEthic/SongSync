@@ -1,1 +1,0 @@
-import 'dart:convert'; import 'package:dio/dio.dart'; void main() async { var res = await Dio().get('https://pipedapi.in.projectsegfau.lt/streams/ol6mmFtZbJY'); var data = res.data is String ? jsonDecode(res.data) : res.data; var url = data['audioStreams'][0]['url']; print(url); }

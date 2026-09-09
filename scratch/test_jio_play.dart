@@ -1,1 +1,0 @@
-import 'package:dio/dio.dart'; void main() async { try { var dio = Dio(); var res = await dio.head('https://aac.saavncdn.com/248/46944eb7b4b31f5b0abf5eb2e1be2d2a_320.mp4'); print(res.statusCode); } catch (e) { print(e); } }

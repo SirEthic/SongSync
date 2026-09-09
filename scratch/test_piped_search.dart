@@ -1,1 +1,0 @@
-import 'package:dio/dio.dart'; import 'dart:convert'; void main() async { try { var res = await Dio().get('https://pipedapi.in.projectsegfau.lt/search?q=Pineapple%20Express%20Fineapple&filter=music_songs'); var data = res.data is String ? jsonDecode(res.data) : res.data; print(data['items'][0]['title']); print(data['items'][0]['url']); } catch (e) { print(e); } }
